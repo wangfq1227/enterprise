@@ -1,6 +1,9 @@
 <%@ page language="java" contentType="text/html; UTF-8"
          pageEncoding="UTF-8" %>
 <style>
+    .footer{
+        margin-top: 50px;
+    }
     .line-01{
         line-height: 1px;
         border-left: 50px solid #ddd;
@@ -17,8 +20,8 @@
     }
     .banner-vertical{
         float: left;
-        width: 18%;
-        padding-right: 2%;
+        width: 19%;
+        /*padding-right: 2%;*/
         font-size: 12px;
         line-height: 1.8;
     }
@@ -71,22 +74,10 @@
                     <ul>
                         <li><a href="<%=path%>/article/party/PartyOne">党政动态</a></li>
                         <li><a href="<%=path%>/article/party/PartyTwo">廉洁建设</a></li>
-                        <li><a href="<%=path%>/article/party/PartyThree">业务介绍</a></li>
-                        <li><a href="<%=path%>/article/party/PartyFour">工作动态</a></li>
+                        <li><a href="<%=path%>/article/party/PartyThree">红色教育</a></li>
                     </ul>
                 </div>
             </div>
-            <%--<div class="banner-nav-list">
-                <div class="banner-nav-title">
-                    <a href="<%=path%>/article/education">红色教育</a>
-                </div>
-                <div class="banner-nav-item">
-                    <ul>
-                        <li><a href="<%=path%>/article/education/EducationTwo">业务介绍</a></li>
-                        <li><a href="<%=path%>/article/education/EducationOne">工作动态</a></li>
-                    </ul>
-                </div>
-            </div>--%>
         </div>
         <div class="banner-vertical">
             <div class="banner-nav-list">

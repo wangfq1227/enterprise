@@ -7,6 +7,10 @@ import com.enterprise.controller.BaseController;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
+
+import javax.servlet.http.HttpServletRequest;
 
 /**
  * 文章管理Action
@@ -30,5 +34,12 @@ public class ArticleAction extends BaseController<Article>{
         super.page_toAdd = page_toAdd;
     }
 
-
+    @RequestMapping(value="delete")
+    public String delete(HttpServletRequest request, String id, RedirectAttributes flushAttrs) throws Exception{
+        Article article = new Article();
+        article.setId(Integer.valueOf(id));
+        getService().delete(article);
+        addMessage(flushAttrs,"操作成功！");
+        return "redirect:selectList";
+    }
 }

@@ -33,7 +33,7 @@ public class AddressUtil {
 	}
 	
 	public static String getAddress(String content,String encodingStr) throws UnsupportedEncodingException{
-		String url = "http://ip.taobao.com/service/getIpInfo.php";
+		String url = "";
 		String returnStr = getResult(url, content, encodingStr);
 		if(returnStr != null){
 			String[] temp = returnStr.split(",");

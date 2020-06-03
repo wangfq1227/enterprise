@@ -21,9 +21,10 @@
         color: inherit;
         padding-top: 5px;
         font-family: Microsoft Yahei;
+        transition: height 0.4s ;
     }
     .nav li a:hover{
-        background-color: red;
+        background-color: #D50A1D;
     }
     .header{
         width: 100%;
@@ -187,15 +188,7 @@
                 <p>
                     <a href="<%=path%>/article/party/PartyThree">
                         <i></i>
-                        <span>业务介绍</span>
-                    </a>
-                </p>
-            </div>
-            <div class="header-popup-catalog-li" style="width: 50%;float: right;">
-                <p>
-                    <a href="<%=path%>/article/party/PartyFour">
-                        <i></i>
-                        <span>工作动态</span>
+                        <span>红色教育</span>
                     </a>
                 </p>
             </div>

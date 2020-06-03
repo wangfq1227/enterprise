@@ -74,14 +74,13 @@
     }
     .section-content {
         position: relative;
-        width: 1180px;
-        min-height: 580px;
+        width: 1200px;
+        /*min-height: 580px;*/
         margin: 0 auto;
-        padding-top: 110px;
     }
     .section-txt {
         margin-bottom: 5px;
-        margin-left: 7px;
+        /*margin-left: 7px;*/
         max-width: 650px;
     }
     .section-txt-tit {
@@ -104,11 +103,11 @@
         outline: none;
     }
     .section-box-img.box-type-five {
-        width: 540px;
-        height: 130px;
+        width: 600px;
+        height: 180px;
         display: inline-block;
     }
-    .section-box-img .section-box-bg {
+    .section-box-img .section-box-bg .img{
         position: absolute;
         width: 100%;
         height: 100%;
@@ -141,7 +140,7 @@
         top: 0;
         left: 0;
         float: left;
-        color: #f2f2f2;
+        color: #333333;
         overflow: hidden;
         z-index: 1;
         -webkit-transition: all .2s linear;
@@ -166,7 +165,7 @@
         height: 270px;
         margin-top: 40px;
         background-color: white;
-        margin-left: 20px;
+        /*margin-left: 20px;*/
     }
     .news-right{
         float: right;
@@ -174,7 +173,7 @@
         height: 270px;
         margin-top: 40px;
         background-color: white;
-        margin-right: 20px;
+        /*margin-right: 20px;*/
     }
     .news-list-tag{
         width: 150px;
@@ -211,21 +210,77 @@
         width: 94px;
         display: inline-block;
     }
+
+    .nav-news{
+        height: 300px;
+        width: 1200px;
+        width: 1200px;
+        margin: 0 auto;
+        margin-top: 100px;
+    }
+
+    .nav-business{
+        width: 1200px;
+        margin: 0 auto;
+        margin-top: 100px;
+    }
+
+    .container1{
+        width: 1200px;
+        margin: 0 auto;
+        margin-top: 100px;
+    }
+    .section4 .title {
+        font-size: 34px;
+        color: #00132b;
+        -webkit-text-stroke-width: 0.2px;
+        display: block;
+        opacity: 1;
+    }
+    .section4 ul {
+        width: 1250px;
+        margin-left: -45px;
+        margin-top: 20px;
+        display: block;
+        opacity: 1;
+    }
+    .section4 li {
+        margin-left: 45px;
+        float: left;
+        width: 369px;
+    }
+    .section4 .img {
+        width: 369px;
+        height: 369px;
+    }
+
+    .container1 ul li div img {
+        width: 100%;
+        transform: scale(1);
+        transition: all 1s ease 0s;
+    }
+    .container1 ul li div img:hover {
+        transform: scale(1.2);
+        transition: all 1s ease 0s;
+    }
+    .desc{
+        margin-top: 15px;
+    }
 </style>
 <body>
 <%@include file="/front/common/navigation.jsp" %>
 <div class="nav-banner" style="height: 690px;">
     <div class="banner-bg" style="position: relative;z-index: 7;">
-        <img src="<%=path%>/resource/images/index/banner_back.jpg" style="width: 1536px; margin-left: -273px;">
+        <img src="<%=path%>/resource/images/index/banner_back.jpg" style="width: 1536px; margin-left: -133px;">
     </div>
     <div class="banner-cont-enti" style="position: relative;z-index: 8;">
-        <div class="banner-cont-enti-item building1" style="left: 941px; top: 0px;margin-top: -650px;margin-left: 50%">
+        <div class="banner-cont-enti-item building1" style="left: 941px; top: 0px;margin-top: -665px;margin-left: 55%">
             <img src="<%=path%>/resource/images/index/banner.png">
         </div>
     </div>
 </div>
 <div class="nav-content" style="margin-top: -200px;position:relative;z-index: 9;">
-    <div class="nav-news" style="height: 300px;">
+    <div class="nav-news">
         <div class="news-left">
             <a href="#">
                 <div class="news-list-tag">
@@ -273,7 +328,22 @@
             </p>
         </div>
     </div>
-    <div class="nav-business" style="margin-left: 100px;">
+    <div class="container1 section4 section">
+        <div class="title" style="display: block; opacity: 1;">党建文化</div>
+        <ul class="clearfix" style="display: block; opacity: 1;">
+            <c:forEach var="item" items="${partys}">
+                <li>
+                    <div class="img"><img src="${item.image}" href="<%=path%>/article/party/${item.id}"></div>
+                    <div class="desc">
+                        <a href="<%=path%>/article/party/${item.id}">
+                            <p title="${item.title}">${item.title}</p>
+                        </a>
+                    </div>
+                </li>
+            </c:forEach>
+        </ul>
+    </div>
+    <div class="nav-business">
         <div class="section-content">
             <div class="section-txt">
                 <div class="section-txt-tit">集团业务</div>
@@ -329,7 +399,7 @@
             </div>
         </div>
     </div>
-    <div class="nav-connection">
+    <div class="nav-connection" style="margin-top: 100px;">
         <div class="block51 clearfix">
             <div class="cards cards-left">
                 <div class="cards-top">
@@ -351,7 +421,7 @@
                     <p class="cards-top-tit">联系我们</p>
                 </div>
                 <div class="cards-txt">
-                    <p>电话：0539-8310308</p>
+                    <p>电话 ： 0539-8310308</p>
                     <p>&nbsp;</p>
                     <div>地址 ： 山东省临沂市兰山区沂蒙路338号</div>
                     <div>&nbsp;</div>

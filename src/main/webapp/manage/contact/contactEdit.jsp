@@ -46,6 +46,7 @@
 
     var content;
     KindEditor.ready(function (K) {
+        debugger
         content = K.create('textarea[name="contentHtml"]', {
             filterMode: false,
             allowFileManager: true,
@@ -85,6 +86,7 @@
 
     });
     function commit(obj) {
+        debugger
         content.sync();
         var _form = $("form");
         _form.attr("action", $(obj).attr("method"));
