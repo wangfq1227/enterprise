@@ -133,6 +133,8 @@ public class ArticleAction extends BaseController<Article>{
             Article e = articleService.selectById(Integer.parseInt(code));
             e.setHit(String.valueOf(Integer.parseInt(e.getHit())+1));
             articleService.update(e);       //更新浏览量     --优化建议：可使用缓存或者redis暂存  然后再刷入数据库
+            ArticleCategory category = articleCategoryService.selectById(Integer.parseInt(e.getCategoryId()));
+            e.setCatename(category.getCatename());
             Article next = articleService.selectNext(Integer.parseInt(code));
             if(next==null){
                 next = new Article();
@@ -274,6 +276,8 @@ public class ArticleAction extends BaseController<Article>{
             Article e = articleService.selectById(Integer.parseInt(code));
             e.setHit(String.valueOf(Integer.parseInt(e.getHit())+1));
             articleService.update(e);       //更新浏览量     --优化建议：可使用缓存或者redis暂存  然后再刷入数据库
+            ArticleCategory category = articleCategoryService.selectById(Integer.parseInt(e.getCategoryId()));
+            e.setCatename(category.getCatename());
             Article next = articleService.selectNext(Integer.parseInt(code));
             if(next==null){
                 next = new Article();
@@ -389,6 +393,8 @@ public class ArticleAction extends BaseController<Article>{
             Article e = articleService.selectById(Integer.parseInt(code));
             e.setHit(String.valueOf(Integer.parseInt(e.getHit())+1));
             articleService.update(e);       //更新浏览量     --优化建议：可使用缓存或者redis暂存  然后再刷入数据库
+            ArticleCategory category = articleCategoryService.selectById(Integer.parseInt(e.getCategoryId()));
+            e.setCatename(category.getCatename());
             Article next = articleService.selectNext(Integer.parseInt(code));
             if(next==null){
                 next = new Article();
@@ -515,6 +521,8 @@ public class ArticleAction extends BaseController<Article>{
             Article e = articleService.selectById(Integer.parseInt(code));
             e.setHit(String.valueOf(Integer.parseInt(e.getHit())+1));
             articleService.update(e);       //更新浏览量     --优化建议：可使用缓存或者redis暂存  然后再刷入数据库
+            ArticleCategory category = articleCategoryService.selectById(Integer.parseInt(e.getCategoryId()));
+            e.setCatename(category.getCatename());
             Article next = articleService.selectNext(Integer.parseInt(code));
             if(next==null){
                 next = new Article();
@@ -633,6 +641,8 @@ public class ArticleAction extends BaseController<Article>{
             Article e = articleService.selectById(Integer.parseInt(code));
             e.setHit(String.valueOf(Integer.parseInt(e.getHit())+1));
             articleService.update(e);       //更新浏览量     --优化建议：可使用缓存或者redis暂存  然后再刷入数据库
+            ArticleCategory category = articleCategoryService.selectById(Integer.parseInt(e.getCategoryId()));
+            e.setCatename(category.getCatename());
             Article next = articleService.selectNext(Integer.parseInt(code));
             if(next==null){
                 next = new Article();
@@ -750,6 +760,8 @@ public class ArticleAction extends BaseController<Article>{
             Article e = articleService.selectById(Integer.parseInt(code));
             e.setHit(String.valueOf(Integer.parseInt(e.getHit())+1));
             articleService.update(e);       //更新浏览量     --优化建议：可使用缓存或者redis暂存  然后再刷入数据库
+            ArticleCategory category = articleCategoryService.selectById(Integer.parseInt(e.getCategoryId()));
+            e.setCatename(category.getCatename());
             Article next = articleService.selectNext(Integer.parseInt(code));
             if(next==null){
                 next = new Article();

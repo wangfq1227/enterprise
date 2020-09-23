@@ -31,7 +31,7 @@
 		<property name="breakAfterAcquireFailure" value="true"/>
 		<property name="testConnectionOnCheckout" value="true"/>
 	</bean>
-	
+
 	<bean id="sessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
 		<property name="configLocation">
 			<value>classpath:mybatis-config.xml</value>

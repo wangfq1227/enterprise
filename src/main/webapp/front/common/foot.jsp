@@ -1,9 +1,6 @@
 <%@ page language="java" contentType="text/html; UTF-8"
          pageEncoding="UTF-8" %>
 <style>
-    .footer{
-        margin-top: 50px;
-    }
     .line-01{
         line-height: 1px;
         border-left: 50px solid #ddd;
@@ -16,14 +13,15 @@
         background-color: #E8E8EA;
         border-top: 1px solid #d5000f;
         position: relative;
-        height: 215px;
+        height: 185px;
+        font-weight: bold;
     }
     .banner-vertical{
         float: left;
         width: 19%;
         /*padding-right: 2%;*/
         font-size: 12px;
-        line-height: 1.8;
+        line-height: 1.2;
     }
     .banner-nav-list{
         position: relative;
@@ -34,10 +32,10 @@
         font-size: 15px;
         line-height: 2;
         margin-top: 30px;
-        font-weight: normal;
     }
     .banner-nav-item{
         margin-top: 18px;
+        margin-left:-18px;
     }
     .banner-nav-item ul li{
         list-style: disc;

@@ -6,12 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="enterprise" />
         <module name="maven_web" />
+        <module name="enterprise" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="enterprise" target="1.7" />
+      <module name="enterprise" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

@@ -4,48 +4,8 @@
 
 <%@include file="/front/common/common.jsp" %>
 <style>
-    .left-box span {
-        font-size: 24px;
-        color: #333;
-    }
-    .left-box ul{
-        margin-top: 20px;
-    }
-    .left-box ul li {
-        line-height: 42px;
-        border-top: 1px solid #ccc;
-    }
-    .left-box li i {
-        display: inline-block;
-        width: 2px;
-        height: 10px;
-        background: #ccc;
-        font-size: 0;
-        margin: 0 10px;
-    }
-    .left-box li a {
-        font-size: 14px;
-        color: #333;
-        font-weight: 600;
-    }
-    .left-box li a:hover{
-        color: #d5000f;
-    }
-    .abt_cent_cont p {
-        font-size: 14px;
-        color: #333;
-        margin-bottom: 20px;
-        font-weight: bold;
-    }
     span{
-        margin-left: 10px;
         margin-right: 10px;
-    }
-    .breadcrumb h3 {
-        font-size: 36px;
-        color: #c19f63;
-        margin-bottom: 50px;
-        font-weight: normal;
     }
 </style>
 <body>
@@ -53,7 +13,7 @@
 <div class="banner" style="background-image: url(<%=path%>/resource/images/banner/announcement.png)">
 
 </div>
-<div style="background-color: white;opacity: 0.9;filter:Alpha(opacity=50);">
+<div style="background-color: white;opacity: 0.9;filter:Alpha(opacity=50);width: 900px;margin: 0 auto;">
     <div class="warp_main">
         <div class="abt_cent_cont">
             <p>

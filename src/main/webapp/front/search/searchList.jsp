@@ -6,7 +6,7 @@
 <style>
     .sear{
         height: 30px;
-        margin-left: 35%;
+        margin-left: 25%;
     }
     .sear input{
         float: left;
@@ -15,6 +15,9 @@
         float: left;
         margin-left: 25%;
         margin-top: 50px;
+    }
+    span{
+        margin-right: 10px;
     }
 </style>
 
@@ -29,7 +32,7 @@
         location.href = "<%=path%>/article/search?keyword="+keyword;
     };
 </script>
-<div style="background-color: white;opacity: 0.9;filter:Alpha(opacity=50);">
+<div style="background-color: white;opacity: 0.9;filter:Alpha(opacity=50);width: 900px;margin: 0 auto;">
     <div class="warp_main">
         <div class="sear" style="margin-top: 30px;">
             <input type="text" id="sear2" name="search" class="form-control" placeholder="搜索……" style="width: 300px;"/>

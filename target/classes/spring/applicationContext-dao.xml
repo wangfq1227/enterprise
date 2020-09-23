@@ -28,10 +28,11 @@
 		<property name="maxStatements" value="0"/>
 		<property name="idleConnectionTestPeriod" value="60"/>
 		<property name="acquireRetryAttempts" value="30"/>
-		<property name="breakAfterAcquireFailure" value="true"/>
-		<property name="testConnectionOnCheckout" value="true"/>
+		<property name="acquireRetryDelay" value="100"/>
+		<property name="breakAfterAcquireFailure" value="false"/>
+		<property name="testConnectionOnCheckout" value="false"/>
 	</bean>
-	
+
 	<bean id="sessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
 		<property name="configLocation">
 			<value>classpath:mybatis-config.xml</value>

@@ -5,14 +5,14 @@
 <style>
     #float_right{
         z-index: 999;
-        width: 48px;
+        width: 36px;
     }
     #float_right a{
         background-color: rgba(180,180,181,0.6);
         background-position: center center;
         display: block;
-        height: 48px;
-        width: 48px;
+        height: 36px;
+        width: 36px;
         margin: 0 0 2px 0 !important;
         padding-left: 0;
     }

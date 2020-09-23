@@ -9,7 +9,7 @@
         width: 90px;
         height: 107px;
         float: left;
-        line-height: 107px;
+        line-height: 72px;
         font-size: 15px;
         color: #262626;
         margin-left: 5px;
@@ -28,7 +28,7 @@
     }
     .header{
         width: 100%;
-        height: 120px;
+        height: 80px;
         overflow: hidden;
         padding: 0 20px;
         background:#fff;
@@ -36,12 +36,11 @@
         min-height: 60px;
         line-height: 60px;
         overflow: hidden;
-        opacity: 0.7;
     }
     .header-about{
-        position: absolute;
+        position: fixed;
         width: 100%;
-        height: 250px;
+        height: 200px;
         overflow: hidden;
         /*padding: 0 20px;*/
         z-index: 20;
@@ -52,7 +51,7 @@
         overflow: hidden;
     }
     #catalog_search{
-        position: absolute;
+        position: fixed;
         margin-left: 70%;
         width: 30%;
         height: 60px;
@@ -65,7 +64,7 @@
 
     }
     .header-popup-img{
-        height: 300px;
+        height: 200px;
         float: left;
         width: 75%;
     }
@@ -87,8 +86,7 @@
         font-size: 18px;
     }
     .header-popup-catalog-li p{
-        line-height: 50px;
-        padding-left: 50px;
+        line-height: 20px;
     }
     .button-search{
         width: 60px;
@@ -102,12 +100,12 @@
     }
 </style>
 <div class="header">
-    <div style="float: left;margin-top: 30px">
+    <div style="float: left;margin-top: 15px">
         <a href="<%=path%>/index">
             <img src="<%=SystemManage.getInstance().getSystemSetting().getImageRootPath() %><%=SystemManage.getInstance().getSystemSetting().getLogo() %>"/>
         </a>
     </div>
-    <div style="width: 50%;height: 120px;float: right;overflow: hidden;">
+    <div style="width: 50%;height: 80px;float: right;overflow: hidden;">
         <ul class="nav">
             <li>
                 <a href="<%=path%>/service/2" onmousemove="document.getElementById('catalog_about').style.display = 'block';"
@@ -132,14 +130,14 @@
             <li>
                 <a href="<%=path%>/contact" onmousemove="document.getElementById('catalog_search').style.display = 'block';"
                    onmouseout="document.getElementById('catalog_search').style.display = 'none';" class="button-search"
-                   style="background-image: url(<%=path%>/resource/images/button/search.png)"></a>
+                   style="background-image: url(<%=path%>/resource/images/button/search.png);margin-top: -18px;"></a>
             </li>
         </ul>
     </div>
 </div>
-<div style="position: relative;z-index: 20;">
-    <div id="catalog_about" class="header-about" style="display: none;" onmousemove="document.getElementById('catalog_about').style.display = 'block';"
-         onmouseout="document.getElementById('catalog_about').style.display = 'none';">
+<div style="position: fixed;z-index: 20;">
+    <div id="catalog_about" class="header-about" style="display: none;" onmousemove="document.getElementById(catalog_about).style.display = 'block';"
+         onmouseout="document.getElementById(catalog_about).style.display = 'none';">
         <div class="header-popup-img">
             <img src="<%=path%>/resource/images/banner/company_top.png">
         </div>
@@ -222,8 +220,6 @@
                         <span>开发建设</span>
                     </a>
                 </p>
-            </div>
-            <div class="header-popup-catalog-li" style="width: 50%;float: right;">
                 <p>
                     <a href="<%=path%>/article/business/BusinessFour">
                         <i></i>

@@ -78,17 +78,17 @@ public class IndexAction {
         }
 
         List<Article> newss = new ArrayList<>();
-        if(newsList.size()<=5){
+        if(newsList.size()<=3){
             newss.addAll(newsList);
         }else{
-            newss.addAll(newsList.subList(0,5));
+            newss.addAll(newsList.subList(0,3));
         }
 
         List<Article> announcements = new ArrayList<>();
-        if(announcementList.size()<=5){
+        if(announcementList.size()<=3){
             announcements.addAll(announcementList);
         }else{
-            announcements.addAll(announcementList.subList(0,5));
+            announcements.addAll(announcementList.subList(0,3));
         }
 
         List<Article> partys = new ArrayList<>();
