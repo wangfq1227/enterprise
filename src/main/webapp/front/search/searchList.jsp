@@ -32,7 +32,7 @@
         location.href = "<%=path%>/article/search?keyword="+keyword;
     };
 </script>
-<div style="background-color: white;opacity: 0.9;filter:Alpha(opacity=50);width: 900px;margin: 0 auto;">
+<div style="background-color: white;opacity: 0.9;filter:Alpha(opacity=50);width: 1080px;margin: 0 auto;">
     <div class="warp_main">
         <div class="sear" style="margin-top: 30px;">
             <input type="text" id="sear2" name="search" class="form-control" placeholder="搜索……" style="width: 300px;"/>

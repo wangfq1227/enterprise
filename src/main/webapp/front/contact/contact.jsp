@@ -2,11 +2,16 @@
          pageEncoding="UTF-8"%>
 
 <%@include file="/front/common/common.jsp"%>
+<style>
+    span{
+        margin-right: 10px;
+    }
+</style>
 <body>
 <%@include file="/front/common/navigation.jsp"%>
 <div class="banner" style="background-image: url(<%=path%>/resource/images/banner/connection.png)"></div>
 
-<div style="background-color: white;opacity: 0.9;filter:Alpha(opacity=50);">
+<div style="background-color: white;opacity: 0.9;filter:Alpha(opacity=50);width: 1080px;margin: 0 auto;">
     <div class="warp_main">
         <div class="warp_right">
             <div class="breadcrumb" style="margin-left: 0px;">

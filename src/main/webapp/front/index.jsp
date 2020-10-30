@@ -13,9 +13,8 @@
     .block51 {
         position: relative;
         left: 50%;
-        top: 45px;
+        top: 290px;
         width: 980px;
-        /* height: 400px; */
         margin-left: -480px;
         opacity: 1;
         transition: all 0.6s;
@@ -52,7 +51,7 @@
         cursor: pointer;
         float: right;
         font-size: 11px;
-        margin: -28px 20px 0 0;
+        margin: 28px 28px 0 0;
     }
     .en p, .en div, .en span, .en em {
         font-weight: 300;
@@ -76,14 +75,10 @@
     }
     .section-content {
         position: absolute;
-        width: 900px;
-        /*min-height: 580px;*/
-        margin: 80px 140px;
+        margin: 290px 140px;
     }
     .section-txt {
         margin-bottom: 5px;
-        /*margin-left: 7px;*/
-        max-width: 650px;
     }
     .section-txt-tit {
         font-size: 34px;
@@ -95,7 +90,6 @@
         font-size: 14px;
     }
     .section-cont-box-warp {
-        width: 900px;
         overflow: auto;
     }
     .section a {
@@ -105,8 +99,8 @@
         outline: none;
     }
     .section-box-img.box-type-five {
-        width: 450px;
-        height: 130px;
+        width: 50%;
+        height: 180px;
         display: inline-block;
     }
     .section-box-img .section-box-bg .img{
@@ -215,27 +209,26 @@
     }
 
     .nav-news{
-        height: 150px;
-        width: 1200px;
+        width: 94%;
         margin: 0 auto;
-        opacity: 0.7;
+        margin: 0 3% 0 3%;
     }
 
     .nav-business{
         width: 100%;
-        height: 582px;
+        height: 972px;
         margin: 0 auto;
         background-image: url("<%=path%>/resource/images/index/background2.jpg");
-        background-size: 100% 582px;
+        background-size: 100% 972px;
     }
 
     .container1{
         width: 100%;
-        height: 582px;
+        height: 972px;
         margin: 0 auto;
-        margin-top: 100px;
+        margin-top: 390px;
         background-image: url("<%=path%>/resource/images/index/background1.jpg");
-        background-size: 100% 582px;
+        background-size: 100% 972px;
     }
     .section4 .title {
         font-size: 34px;
@@ -245,16 +238,17 @@
         opacity: 1;
     }
     .section4 ul {
-        width: 1250px;
+        width: 100%;
         margin-left: -18px;
         margin-top: 20px;
         display: block;
         opacity: 1;
     }
     .section4 li {
-        margin-left: 45px;
         float: left;
         width: 369px;
+        margin-left: 4%;
+        margin-right: 9%;
     }
     .section4 .img {
         width: 369px;
@@ -274,28 +268,39 @@
         margin-top: 15px;
     }
     .nav-connection{
-        height: 582px;
+        height: 972px;
         background-image: url("<%=path%>/resource/images/index/background3.jpg");
-        background-size: 100% 582px;
+        background-size: 100% 972px;
     }
     .nav-party{
-        padding-top:40px;
+        padding-top: 290px;
+    }
+    .header{
+        position: fixed;
+        z-index: 999;
+        opacity: 0.7;
+    }
+    .header-about{
+        margin-top: 80px;
+    }
+    #catalog_search{
+        margin-top: 80px;
     }
 </style>
 <body>
 <%@include file="/front/common/navigation.jsp" %>
 <div id="wrap">
     <div id="main">
-        <div class="nav-banner" style="height: 690px;">
+        <div class="nav-banner" style="height: 798px;">
             <div class="banner-bg" style="position: relative;z-index: 7;">
-                <img src="<%=path%>/resource/images/index/banner_back.jpg" style="width: 1536px; margin-left: -133px;">
+                <img src="<%=path%>/resource/images/index/banner_back.jpg">
             </div>
             <div class="banner-cont-enti" style="position: relative;z-index: 8;">
-                <div class="banner-cont-enti-item building1" style="left: 941px; top: 0px;margin-top: -665px;margin-left: 55%">
+                <div class="banner-cont-enti-item building1" style="left: 941px; top: 0px;margin-top: -583px;margin-left: 55%">
                     <img src="<%=path%>/resource/images/index/banner.png">
                 </div>
             </div>
-            <div class="nav-news" style="position: relative;z-index: 9;height: 150px;margin-top: -455px;">
+            <div class="nav-news" style="position: relative;z-index: 9;margin-top: -346px">
                 <div class="news-left">
                     <a href="#">
                         <div class="news-list-tag">
@@ -311,13 +316,14 @@
                                 </a>
                             </p>
                         </c:forEach>
+                        <p class="ui-more-btn">
+                            <a href="<%=path%>/article">
+                                <i></i>
+                                <span>更多</span>
+                            </a>
+                        </p>
                     </div>
-                    <p class="ui-more-btn">
-                        <a href="<%=path%>/article">
-                            <i></i>
-                            <span>更多</span>
-                        </a>
-                    </p>
+
                 </div>
                 <div class="news-right">
                     <a href="#">
@@ -334,21 +340,21 @@
                                 </a>
                             </p>
                         </c:forEach>
+                        <p class="ui-more-btn">
+                            <a href="<%=path%>/article/announcement">
+                                <i></i>
+                                <span>更多</span>
+                            </a>
+                        </p>
                     </div>
-                    <p class="ui-more-btn">
-                        <a href="<%=path%>/article/announcement">
-                            <i></i>
-                            <span>更多</span>
-                        </a>
-                    </p>
                 </div>
             </div>
         </div>
         <div class="nav-content" style="position:relative;z-index: 10;margin-top:-289px;">
             <div class="container1 section4 section">
                 <div class="nav-party">
-                    <div class="title" style="display: block; opacity: 1;margin-left: 27px;">党建文化</div>
-                    <ul class="clearfix" style="display: block; opacity: 1;">
+                    <div class="title" style="display: block; opacity: 1;margin-left: 7%;">党建文化</div>
+                    <ul class="clearfix" style="display: block; opacity: 1;margin-left: 3%;">
                         <c:forEach var="item" items="${partys}">
                             <li>
                                 <div class="img"><img src="${item.image}" href="<%=path%>/article/party/${item.id}"></div>
@@ -446,7 +452,7 @@
                             <div>&nbsp;</div>
                             <div class="qrcode"><img src=""></div>
                         </div>
-                        <p class="cards-btm ui-more-btn">
+                        <p class="cards-btm ui-more-btn" style="margin:5px 28px 0 0">
                             <a class="bfd" href="<%=path%>/contact" data-event-id="A_column_click" bfd-type="10" data-id="513"><i></i><span>更多</span></a>
                         </p>
                     </div>
@@ -455,64 +461,6 @@
         </div>
     </div>
 </div>
-<%--<script type="text/javascript">
-    debugger
-    var wrap = document.getElementById("wrap");
-    var main = document.getElementById("main");
-    /*var hei = 600;*/
-    /*wrap.style.height = hei + "px";*/
-    var obj = document.getElementsByTagName("div");
-    /*for(var i=0;i<obj.length;i++){
-        if(obj[i].className == 'nav-banner' || obj[i].className == 'container1 section4 section' ||
-            obj[i].className == 'nav-business' || obj[i].className == 'nav-connection'){
-            obj[i].style.height = hei + "px";
-        }
-    }*/
-    //如果不加时间控制，滚动会过度灵敏，一次翻好几屏
-    var startTime = 0, //翻屏起始时间
-        endTime = 0,
-        now = 0;
-    //浏览器兼容
-    if ((navigator.userAgent.toLowerCase().indexOf("firefox")!=-1)){
-        document.addEventListener("DOMMouseScroll",scrollFun,false);
-    }
-    else if (document.addEventListener) {
-        document.addEventListener("mousewheel",scrollFun,false);
-    }
-    else if (document.attachEvent) {
-        document.attachEvent("onmousewheel",scrollFun);
-    }
-    else{
-        document.onmousewheel = scrollFun;
-    }
-
-    //滚动事件处理函数
-    function scrollFun(event){
-        startTime = new Date().getTime();
-        var delta = event.detail || (-event.wheelDelta);
-        //mousewheel事件中的 “event.wheelDelta” 属性值：返回的如果是正值说明滚轮是向上滚动
-        //DOMMouseScroll事件中的 “event.detail” 属性值：返回的如果是负值说明滚轮是向上滚动
-        if ((endTime - startTime) < -1000){
-            if(delta>0 && parseInt(main.offsetTop) > -(hei*3)){
-                //向下滚动
-                now = now - hei;
-                toPage(now);
-            }
-            if(delta<0 && parseInt(main.offsetTop) < 0){
-                //向上滚动
-                now = now + hei;
-                toPage(now);
-            }
-            endTime = new Date().getTime();
-        }
-        else{
-            /*event.preventDefault();*/
-        }
-    }
-    function toPage(now){
-        $("#main").animate({top:(now+'px')},1000);     //jquery实现动画效果
-    }
-</script>--%>
 <%@include file="/front/common/sharebuttonbox.jsp" %>
 <%@include file="/front/common/foot.jsp" %>
 </body>

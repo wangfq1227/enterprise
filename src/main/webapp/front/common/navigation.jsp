@@ -61,16 +61,14 @@
         background:#E8E8EA;
         overflow-y:auto;
         overflow: hidden;
-
     }
     .header-popup-img{
         height: 200px;
         float: left;
-        width: 75%;
     }
     .header-popup-catalog{
         float: right;
-        width: 25%;
+        width: 16%;
     }
     .header-popup-catalog-title{
         font-size: 23px;
@@ -105,7 +103,7 @@
             <img src="<%=SystemManage.getInstance().getSystemSetting().getImageRootPath() %><%=SystemManage.getInstance().getSystemSetting().getLogo() %>"/>
         </a>
     </div>
-    <div style="width: 50%;height: 80px;float: right;overflow: hidden;">
+    <div style="width: 35%;height: 80px;float: right;overflow: hidden;">
         <ul class="nav">
             <li>
                 <a href="<%=path%>/service/2" onmousemove="document.getElementById('catalog_about').style.display = 'block';"
@@ -136,8 +134,8 @@
     </div>
 </div>
 <div style="position: fixed;z-index: 20;">
-    <div id="catalog_about" class="header-about" style="display: none;" onmousemove="document.getElementById(catalog_about).style.display = 'block';"
-         onmouseout="document.getElementById(catalog_about).style.display = 'none';">
+    <div id="catalog_about" class="header-about" style="display: none;" onmousemove="document.getElementById('catalog_about').style.display = 'block';"
+         onmouseout="document.getElementById('catalog_about').style.display = 'none';">
         <div class="header-popup-img">
             <img src="<%=path%>/resource/images/banner/company_top.png">
         </div>
